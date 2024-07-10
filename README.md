@@ -1,53 +1,12 @@
 # Advancing Front Triangulation
 
-Implements advancing front triangulation aka marching triangles over a signed distance field.
+This project implements advancing front triangulation, also known as marching triangles, over a signed distance field. The algorithm works by finding a surface and then placing triangles as the surface traversal progresses.
 
-The algorithm works by finding a surface, and then placing triangles as the surface traversal progresses.
+It can be used to triangulate large terrains around a camera/player as well as static objects. I originally wrote the code in Java around 2014 for a personal game that was never released.
 
-It can be used to triangulate large terrains around a camera/player as well as static objects.
+Since there are not many available triangulation libraries, I took some time to port it to C++ and open-source it.
 
-The code was originally written in Java (~2014) intended for a game that I never saw the days light.
-
-Since there are not many available triangulators I took some time and ported it to C++ to open source it.
-
-It used GLAD+GLFW and has been tested on Windows, Mac and Linux (ubuntu).
-
-## Examples
-
-The projects includes a main function, running it will triangulate a few example objects and a planet.
-
-You can move around with the keyboard (ASDW + arrows).
-
-### A sphere and cube
-![](examples/cube_sphere.png?raw=true "A cube and a sphere")
-
-### A Sphere minus a cuboid
-![](examples/sphere_hole.png?raw=true "A sphere with perforated with a cube")
-
-### The union of a sphere and cube
-![](examples/sphere_union_cube.png?raw=true "The union of a sphere and cube")
-
-### A planet with moutains
-![](examples/planet.png?raw=true "A planet with mountains")
-
-## Images/Video from the old Java version
-
-Uses the same algorithm but with more color and complex terrains and objects. Everything on the images are triangulated from sdfs (flowers, trees, terrain, sky box etc.).
-
-![](examples/different_materials.png?raw=true "A planet with mountains")
-
-### Flower and objects
-
-![](examples/objects.png?raw=true "A planet with mountains")
-
-### Complex terrain
-
-![](examples/complex_terrain.png "A planet with mountains")
-
-### Early video illustrating the marching triangles
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Vfwo_p4jffM/0.jpg)](https://www.youtube.com/watch?v=Vfwo_p4jffM)
-
+It uses GLAD and GLFW and has been tested on Windows, macOS, and Linux (Ubuntu).
 
 ## Installation
 
@@ -55,4 +14,36 @@ TODO
 
 ## Contributions
 
-Feel free to contribute, I'm not sure how much time I've but please reach out to me with any questions.
+Feel free to contribute, I'm not sure how much time I have but please reach out to me with any questions.
+
+## Examples
+
+Running this project will triangulate a few example objects and a planet, as shown in the images below. You can move around using the keyboard (`WASD` + arrow keys).
+
+### A sphere and cube
+<img src="examples/cube_sphere.png" width="480" alt="A cube and a sphere">
+
+### A Sphere minus a cuboid
+<img src="examples/sphere_hole.png" width="480" alt="A sphere perforated with a cube">
+
+### The union of a sphere and cube
+<img src="examples/sphere_union_cube.png" width="480" alt="The union of a sphere and cube">
+
+### A planet with mountains
+<img src="examples/planet.png" width="480" alt="A planet with mountains">
+
+## Images/Video from the old Java version
+
+Uses the same algorithm but with more color and complex terrains and objects. Everything in the images is triangulated from SDFs (flowers, trees, terrain, skybox, etc.).
+
+<img src="examples/different_materials.png" width="640" alt="A planet with mountains and sea">
+
+### Flower and objects
+<img src="examples/objects.png" width="640" alt="Flowers, trees and rocks">
+
+### Complex terrain
+<img src="examples/complex_terrain.png" width="640" alt="Complex terrain, overhang, caves and holes">
+
+### Early video illustrating the marching triangles
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Vfwo_p4jffM/0.jpg)](https://www.youtube.com/watch?v=Vfwo_p4jffM)
