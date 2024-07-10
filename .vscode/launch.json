@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+      {
+        "name": "(lldb) game-client",
+        "type": "lldb",
+        "request": "launch",
+        "program": "${workspaceFolder}/cmake/game-client/game-client",
+        "cwd": "${workspaceFolder}/cmake/game-client/",
+      },
+      {
+        "name": "(lldb) unittest",
+        "type": "lldb",
+        "request": "launch",
+        "program": "${workspaceFolder}/cmake/unittest/unittest",
+        "cwd": "${workspaceFolder}",
+      }      
+    ]
+  }

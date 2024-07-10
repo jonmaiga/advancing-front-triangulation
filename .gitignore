@@ -1,0 +1,10 @@
+**.DS_Store
+cmake/
+.vs/
+xgl/external/glfw-3.3.4/docs
+xgl/external/glfw-3.3.4/examples
+xgl/external/glfw-3.3.4/tests
+unittest/googletest-release*
+out/
+build/
+Folder.DotSettings.user

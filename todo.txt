@@ -1,0 +1,5 @@
+TODO:
+- See over matrix4.cpp implementation (e.g. why tons of members instead of arrays?)
+- Move out performance tests from unittests, cli?
+
+DONE:

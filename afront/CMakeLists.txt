@@ -1,0 +1,5 @@
+project (afront)
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+add_library(${PROJECT_NAME} STATIC ${SOURCES})
+target_link_libraries(${PROJECT_NAME} PRIVATE core)
+target_include_directories(${PROJECT_NAME} PRIVATE src/ ../core/src/)
